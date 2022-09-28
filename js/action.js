@@ -37,7 +37,7 @@ searchInput.addEventListener('input',function()
 async function getDataApi()
 {
 
-    conction= await fetch(`http://api.weatherapi.com/v1/forecast.json?key=45d0d6d4e14545cca4554556222306&q=${currentcity}&days=3&aqi=no&alerts=no`);
+    conction= await fetch(`http://api.weatherapi.com/v1/forecast.json?key=45d0d6d4e14545cca4554556222306&q=cairo&days=3&aqi=no&alerts=no`);
     DataRespone= await conction.json();
      firstDay();
      nextDay()
