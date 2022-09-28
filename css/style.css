@@ -1,0 +1,151 @@
+*
+{
+    padding: 0; 
+    margin: 0;
+    box-sizing: border-box;
+}
+
+button
+{
+border: 1px solid var(--main-color) !important;
+}
+button:hover
+{
+    color: var(--main-color) !important;
+    background-color: white ;
+}
+
+:root
+{
+    --main-color: #37aec3 
+}
+
+.text-main-color
+{
+color: var(--main-color);
+}
+
+.bg-main-color
+{
+background-color: var(--main-color);
+color: white;
+}
+
+
+
+.wheater .weather-detiles ,.weather-detiles2 ,.weather-detiles3
+{
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    min-height: 300px;
+}
+
+.day-date-weather
+{
+    background-color: #374850 ;
+    color: #bfc1c8;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+
+.weather-detiles
+{
+    background-color: #3199ab ;
+    color: white;
+}
+
+.weather-detiles2 ,.weather-detiles3
+{
+    background-color: #5fb2bf;
+        color: white;
+    transition: 0.7s background-color;
+}
+
+
+
+.weather-detiles2:hover ,.weather-detiles3:hover 
+{
+    background-color: #3199ab ;
+}
+
+.weather-temp h2
+{
+    font-size: 2.9rem !important;
+}
+
+nav 
+{
+    background-color: var(--main-color);
+
+}
+nav  a
+{
+    font-size: 150% !important;
+    color: rgb(255, 255, 255) !important;
+    transition: 0.2s color;
+    padding-bottom: 0px !important  ;
+    border: 0;
+}
+.nav-link 
+{
+    display: inline !important;
+}
+nav  li
+{
+    width: fit-content;
+}
+nav  li a:hover
+{
+/* color: red !important   ; */
+border-bottom: 1px solid #024652 ;
+}
+
+
+@media screen and (max-width:991px)
+{
+body
+{
+    text-align: center;
+}
+.navbar-nav
+{
+    align-items: center;
+}
+.image-rain 
+{
+    justify-content: center;
+    align-items: center;
+}
+}
+
+
+#searchInput
+{
+border: 1px solid var(--main-color) !important;
+font-family: Arial, "FontAwesome";
+width: 32%;
+}
+
+
+
+.search-input:focus-visible
+{
+    outline:none
+}
+
+
+
+
+.apps
+{
+    line-height: 1.9;
+
+}
+
+
+.subscrip-input
+{
+    font-family: 'arial','fontAwesome';
+    border: 1px solid var(--main-color);
+}
