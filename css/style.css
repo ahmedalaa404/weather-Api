@@ -17,7 +17,7 @@ button:hover
 
 :root
 {
-    --main-color: #37aec3 
+    --main-color: rgb(33,37,41) 
 }
 
 .text-main-color
@@ -51,14 +51,14 @@ color: white;
 
 .weather-detiles
 {
-    background-color: #3199ab ;
-    color: white;
+    background-color: var(--main-color);
+        color: white;
 }
 
 .weather-detiles2 ,.weather-detiles3
 {
-    background-color: #5fb2bf;
-        color: white;
+    background-color: var(--main-color);
+            color: white;
     transition: 0.7s background-color;
 }
 
@@ -66,7 +66,7 @@ color: white;
 
 .weather-detiles2:hover ,.weather-detiles3:hover 
 {
-    background-color: #3199ab ;
+    background-color:  rgb(7, 16, 25) 
 }
 
 .weather-temp h2
@@ -95,11 +95,17 @@ nav  li
 {
     width: fit-content;
 }
-nav  li a:hover
+nav  li a
 {
-/* color: red !important   ; */
-border-bottom: 1px solid #024652 ;
+
+ border: none;   
+ display: inline !important;
 }
+nav  li:hover
+{
+    border-bottom: 1px solid rgb(203, 203, 203) !important;
+}
+
 
 
 @media screen and (max-width:991px)
@@ -148,4 +154,23 @@ width: 32%;
 {
     font-family: 'arial','fontAwesome';
     border: 1px solid var(--main-color);
+}
+.day-date-weather
+{
+    font-size: 140%;
+    padding: 10px;
+}
+.wheater:hover .day-date-weather
+{
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+@media  screen and (max-width:574px)
+{
+    .button-dawon
+    {
+        flex-direction: column;
+
+    }
 }

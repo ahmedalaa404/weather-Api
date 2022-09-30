@@ -1,5 +1,4 @@
-let DayName = document.querySelectorAll('.day-name');
-let DayDate = document.querySelectorAll('.day-date');
+
 let cityName = document.querySelector('.city-name');
 let fDayTemp = document.querySelector('.f-temp-Day');
 let imagStatus =Array.from(document.querySelectorAll(".imag-status"));
@@ -10,7 +9,7 @@ let wind = document.querySelector('.wind');
 let umbrella = document.querySelector('.umbrella');
 let compass = document.querySelector('.compass');
 let searchInput=document.getElementById('searchInput');
-let currentcity='cairo';
+let currentcity='aswan';
 
 
 // variable of Api
@@ -19,9 +18,7 @@ let DataRespone;
 
 
 
-// let date = new Date();
-// let weekDays = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
-// let monthName = ['Jan','Feb','March','April','May','June','July','Aug','Spet','Oct','Nov','Dec'];
+
 
 
 
@@ -37,7 +34,7 @@ searchInput.addEventListener('input',function()
 async function getDataApi()
 {
 
-    conction= await fetch(`https://api.weatherapi.com/v1/forecast.json?key=45d0d6d4e14545cca4554556222306&q=cairo&days=3&aqi=no&alerts=no`);
+    conction= await fetch(`https://api.weatherapi.com/v1/forecast.json?key=45d0d6d4e14545cca4554556222306&q=${currentcity}&days=3&aqi=no&alerts=no`);
     DataRespone= await conction.json();
      firstDay();
      nextDay()
@@ -85,3 +82,8 @@ umbrella.innerHTML=DataRespone.current.humidity+'%';
 // console.log("minTemp" ,minTemp );
 // console.log("imag-status" ,imagStatus );
 
+
+// function()
+// {
+
+// }
